@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMPLE TIP CALCULATOR</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>MANOJ'S TIP CALCULATOR</h1>
+        <p>How much was your bill</p>
+        <!-- <label for="bill">Rs:</label>
+        <input type="number" id="bill" min="0" step="0.01"> -->
+        <label for="currency">bill:</label>
+        <input type="number" id="bill" min="0" step="0.01">
+        <select id="bill">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <br/>
+        <br/>
+        <label for="serviceRating">How was the service:</label>
+        <select id="serviceRating">
+            <option value="0.15">Good (15%)</option>
+            <option value="0.18">Fair (18%)</option>
+            <option value="0.20">Excellent (20%)</option>
+        </select>
+        
+        <br/>
+        <br/>
+        <label for="numOfPersons">How many people are sharing the bill:</label>
+            <input type="number" id="numOfPersons" min="1">
+            <br/>
+            <button id="calculate">Calculate</button>
+            <br/>
+            <h2>Tip Amount Per Person:</h2>
+            <ul id="individualTips"></ul>
+            <br/>
+
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
